@@ -1,0 +1,23 @@
+
+<hr>
+
+<p><%= comment.name %> - <em><%= comment.age %></em>, <em><%= comment.location %></em>
+
+<br>
+
+
+<p><%= comment.body %></p>
+
+	<%= link_to "Show full comment", post_comment_path(@post, comment) unless controller_name == "comments" %>
+
+	<%= link_to "Edit comment", edit_post_comment_path(@post, comment) if controller_name == "comments"%>
+
+	<%= link_to "Delete comment", post_comment_path, method: :delete, data: { confirm: "Are you sure?"} if controller_name == "comments" %>
+
+</p>
+
+<br>
+
+<%= link_to "Back to blog post", post_path(@post) if controller_name == "comments" %>
+
+

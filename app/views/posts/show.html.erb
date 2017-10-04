@@ -1,2 +1,13 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<%= render @post %>
+
+<h3>Comments: </h3>
+
+<%= link_to "Add a comment", new_post_comment_path(@post) %>
+
+<%= render @post.comments %>
+
+<br>
+
+<%= link_to "Delete Post", @post, method: :delete, data: { confirm: "Are you sure?" } %>
+
+

@@ -1,0 +1,17 @@
+<!-- <h2><%= post.id %></h2> -->
+
+<h1><%= post.name %></h1>
+
+<%= link_to "Blog Home", posts_path unless action_name == "index" %> 
+
+<p>Author: <%= post.author %>
+
+<p>Theme: <%= post.theme %></p>
+
+<%= image_tag(post.picture_url) %>
+
+<br>
+<%= link_to "Show Page", post if action_name == "index" %> 
+<%= link_to "Edit Page", edit_post_path(post) if action_name == "show" %>
+
+<br>
