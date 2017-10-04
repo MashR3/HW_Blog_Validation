@@ -1,0 +1,41 @@
+body {
+	background-image: url(pp.jpg);
+	background-size: contain;
+}
+
+h1, h2, h3, p {
+	background-color: #a1859f;
+	margin: 0 auto;
+	font-family: sans-serif;
+
+}
+
+h1 {
+	text-align: center;
+    width: 590px;
+    border-radius: 20px;
+    border: solid purple 5px;
+    font-size: 58px;
+    font-family: sans-serif;
+}
+
+p {
+	text-align: center;
+    margin: 0 auto;
+    width: 261px;
+    border: solid navajowhite 3px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+a {
+	background: cornsilk;
+	font-size: 20px;
+	width: 70px;
+	color: red
+}
+
+img {
+	width: 600px;
+	position: center;
+}
