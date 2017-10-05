@@ -1,6 +1,8 @@
 body {
-	background-image: url(pp.jpg);
+	background-image: url(p3.jpg);
 	background-size: contain;
+	background-repeat: repeat-y;
+	color: white;
 }
 
 h1, h2, h3, p {
@@ -31,8 +33,10 @@ p {
 a {
 	background: cornsilk;
 	font-size: 20px;
-	width: 70px;
+	width: 140px;
 	color: red
+	margin: 0 auto;
+    display: -webkit-box;
 }
 
 img {

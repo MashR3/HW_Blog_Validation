@@ -8,7 +8,15 @@
 
 <p>Theme: <%= post.theme %></p>
 
-<%= image_tag(post.picture_url) %>
+<hr>
+
+<div id="imaj"> <%= image_tag(post.picture_url) %> </div>
+
+<hr>
+
+<%= post.body %>
+
+<hr> 
 
 <br>
 <%= link_to "Show Page", post if action_name == "index" %> 
